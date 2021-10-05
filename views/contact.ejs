@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    
+    <h1 class="brand"><span>Komal_</span>1910990527</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Sample Project</h3>
+      </div>
+      <div class="contact">
+        <h3>Person's details for entering the Office</h3>
+
+
+        <form method="POST" action="send">
+            
+          <p>
+            <label>Name</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+          </p>
+          <p class="full">
+         <label>Current Date and Time : </label>
+         <br>
+        <span id='date-time' name="date-time"></span>
+        </p>
+          <p class="full">
+            <label>Check-In Time</label><input type="time" id='time' name="time"></input>
+          </p>
+          <p class="full">
+
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    
+        var dt=new Date();
+        var time=dt.getHours()+":" + dt.getMinutes() + ":" + dt.getSeconds();
+        document.getElementById('date-time').innerHTML=dt;
+        document.getElementById('time').innerHTML=time;
+
+  </script>
+</body>
+</html>
