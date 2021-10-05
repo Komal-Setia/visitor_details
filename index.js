@@ -42,6 +42,7 @@ if(process.env.NODE_ENV !== 'production'){
         port: 587,
         secure: false, 
         auth: {
+          type:'OAuth2',
             user: process.env.MY_EMAIL, 
             pass: process.env.MY_PASSWORD
         },
