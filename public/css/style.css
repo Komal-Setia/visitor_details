@@ -67,7 +67,7 @@
   .contact form .full{
     grid-column: 1 / 3;
   }
-  #date-time {
+  #date {
       border: 1px solid black;
       padding: 6px;
   }
